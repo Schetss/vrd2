@@ -1,0 +1,188 @@
+
+//
+// immo
+//
+
+.immo {
+
+	margin-top: 0;
+
+
+	.images {
+
+		@include mq($bp3) {
+			height: 350px;
+		}
+
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		margin-top: 1.5em;
+
+		img {
+			width: 100%;
+
+			@include mq($bp3) {
+				min-height: 350px;
+			}
+		}
+	}
+
+
+	.immo-intro {
+		margin-top: 1em;
+	
+		@include px-padding-lr(1,1);
+
+		@include mq($bp3) {
+			@include px-padding-lr(0,0);	
+		}
+
+
+		
+	}
+
+
+
+	.immo-btn {
+		text-align: center;
+		margin-top: -3em;
+		@include mq($bp3) {
+			bottom: 0;
+			margin-top: 0;
+		}
+		position: absolute;
+		
+		right: 0;
+		a {
+			@include background-opacity($alpha-ui-color, 0.85);
+			@include padding-tb(0.5,0.5);
+			@include px-padding-lr(2,2);
+			color: $beta-text-color;
+			width: 190px;
+			display: block;
+		}
+
+		a:hover, a:active, a:visited {
+			background-color: lighten($alpha-ui-color,3);
+			text-decoration: none;
+		}
+	}
+
+}
+
+
+//
+// navigation
+//
+
+.immo-nav {
+	float: left;
+	width: 100%;
+
+	ul {
+		@extend %clearfix;
+		font-family: $alpha-font-family;
+		@include list-nav;
+		// @include text-dimensions($alpha-font-size,1,1);
+	}
+	
+	a {
+		@include px-padding-lr(1,1);
+		@include padding-tb(0.3,0.3);
+		color: $beta-text-color;
+		text-decoration: none;
+		//font-weight: $beta-font-weight;
+		float: left;
+
+		@include mq($bp3) {
+			@include px-padding-lr(2,2);
+		}
+	}
+
+	.selected a {
+		background-color: lighten($alpha-ui-color,10);
+	}
+}
+
+
+.immo-bluebox {
+	background-color: $alpha-ui-color;
+}
+
+
+
+//
+// Detail
+//
+
+
+#immo-slide-holder {
+	width: 100%;
+
+	#immo-slide-runner {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+}
+
+
+//
+// slider
+//
+#flexslider-main {
+	background-color: lighten($gamma-ui-color, 21);
+	width: 100%;
+	height: 370px;
+	overflow: hidden;
+	margin-bottom: 1em;
+	text-align: center;
+	white-space: nowrap;
+	margin-top: 3em;
+	
+	.flexbox {
+		display: inline-block;
+    	height: 100%;
+    	vertical-align: middle;
+	}
+		img {
+			margin-left: -0.2em;
+			max-height: 370px;
+			max-width: 100%;
+			vertical-align: middle;
+		}
+}
+
+
+.flexslider {
+	background-color: black;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		li {
+			cursor: pointer;
+			float: left;
+			margin-right: 5px;
+			margin-bottom: 5px;
+			img {
+				max-height: 50px;
+				width: auto;
+				display: block;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

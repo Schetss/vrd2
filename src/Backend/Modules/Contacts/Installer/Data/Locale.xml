@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locale>
+  <backend>
+    <core>
+      <item type="label" name="AllContacts">
+        <translation language="nl"><![CDATA[alle getuigenissen]]></translation>
+        <translation language="en"><![CDATA[all contacts]]></translation>
+      </item>
+      <item type="label" name="RandomContact">
+        <translation language="nl"><![CDATA[willekeurige getuigenis]]></translation>
+        <translation language="en"><![CDATA[random contact]]></translation>
+      </item>
+      <item type="label" name="Contacts">
+        <translation language="nl"><![CDATA[getuigenissen]]></translation>
+        <translation language="en"><![CDATA[contacts]]></translation>
+      </item>
+    </core>
+    <contacts>
+      <item type="error" name="ContactIsRequired">
+        <translation language="nl"><![CDATA[Gelieve een getuigenis in te geven.]]></translation>
+        <translation language="en"><![CDATA[Please provide a contact.]]></translation>
+      </item>
+      <item type="label" name="Add">
+        <translation language="nl"><![CDATA[getuigenis toevoegen]]></translation>
+        <translation language="en"><![CDATA[add contact]]></translation>
+      </item>
+      <item type="label" name="Contact">
+        <translation language="nl"><![CDATA[getuigenis]]></translation>
+        <translation language="en"><![CDATA[contact]]></translation>
+      </item>
+      <item type="label" name="Visible">
+        <translation language="nl"><![CDATA[zichtbaar]]></translation>
+        <translation language="en"><![CDATA[visible]]></translation>
+      </item>
+      <item type="message" name="Added">
+        <translation language="nl"><![CDATA[De getuigenis van "%1$s" werd toegevoegd.]]></translation>
+        <translation language="en"><![CDATA[The contact by "%1$s" has been added.]]></translation>
+      </item>
+      <item type="message" name="ConfirmDelete">
+        <translation language="nl"><![CDATA[Ben je zeker dat je de getuigenis van "%1$s" wil verwijderen?]]></translation>
+        <translation language="en"><![CDATA[Are you sure you want to delete the contact by "%1$s"?]]></translation>
+      </item>
+      <item type="message" name="Deleted">
+        <translation language="nl"><![CDATA[De getuigenis van "%1$s" werd verwijderd.]]></translation>
+        <translation language="en"><![CDATA[The contact by "%1$s" has been deleted.]]></translation>
+      </item>
+      <item type="message" name="Edit">
+        <translation language="nl"><![CDATA[bewerk de getuigenis van "%1$s"]]></translation>
+        <translation language="en"><![CDATA[edit the contact by "%1$s"]]></translation>
+      </item>
+      <item type="message" name="Edited">
+        <translation language="nl"><![CDATA[De getuigenis van "%1$s" werd opgeslagen.]]></translation>
+        <translation language="en"><![CDATA[The contact by "%1$s" has been edited.]]></translation>
+      </item>
+    </contacts>
+  </backend>
+  <frontend>
+    <core>
+      <item type="message" name="ContactsNoItems">
+        <translation language="nl"><![CDATA[Er zijn geen getuigenissen om te tonen.]]></translation>
+        <translation language="en"><![CDATA[There are no contacts to show.]]></translation>
+      </item>
+      <item type="message" name="RandomContact">
+        <translation language="nl"><![CDATA[Een willekeurige getuigenis:]]></translation>
+        <translation language="en"><![CDATA[A random contact:]]></translation>
+      </item>
+      <item type="message" name="ReadMoreContacts">
+        <translation language="nl"><![CDATA[Lees meer getuigenissen…]]></translation>
+        <translation language="en"><![CDATA[Read more contacts…]]></translation>
+      </item>
+    </core>
+  </frontend>
+</locale>

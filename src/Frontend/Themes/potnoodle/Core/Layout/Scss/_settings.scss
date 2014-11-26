@@ -1,0 +1,157 @@
+//
+// Chopstick settings
+//
+
+// Debug
+
+$debug-mode: false;
+
+// Typography
+
+$show-baseline-grid: false; // toggle the visibility of the baseline (true/false)
+$baseline-holder: holder; // set the classname of the element which will show the baseline
+$grid-color: rgba(#000,0.1); // set the baseline grid color and opacity
+
+$alpha-font-family	:'Open Sans', sans-serif;
+$alpha-font-size	: 16; // pixel-value
+$alpha-font-weight	: 400;
+$alpha-line-height	: 1.5; // em-value
+$alpha-baseline-grid: 7; // pixel-value
+$alpha-leading		: 1; // multiplier
+
+$beta-font-family	: 'Merriweather', serif;
+$beta-font-weight	: 700;
+
+$delta-font-family 	: serif;
+// Grid
+
+$grid-gutter	: 20;
+$grid-column	: 50;
+$grid-columns	: 12;
+
+// Breakpoints calculated in em's, always based on 16px base-value
+
+$bp1: 320/16*1em;
+$bp2: 480/16*1em;
+$bp3: 680/16*1em;
+$bp4: 960/16*1em;
+$bp5: 1140/16*1em;
+$bp6: 2200/16*1em;
+
+// the last breakpoint is calculated in shared/_grid.scss
+// $bp5: #{1200 / $alpha-font-size}em;
+
+// Modular scale settings
+
+$ratio				: 1.414;
+$importantnumber	: 44;
+$leading			: 1;
+$base-size			: $alpha-font-size/16*1em;
+
+// manual modular scale font sizes
+// based on http://modularscale.com/scale/?px1=16&px2=18&ra1=1.333&ra2=0
+
+$ms-2 				: 12;
+$ms-1 				: 14;
+$ms1 			 	: 18;
+$ms2 			 	: 21;
+$ms3 			 	: 23;
+$ms4 			 	: 28;
+$ms5 			 	: 31;
+$ms6 			 	: 37;
+$ms7 			 	: 42;
+$ms8 			 	: 50;
+$ms10 			 	: 56;
+$ms11			 	: 67;
+$ms12			 	: 75;
+$ms13			 	: 89;
+$ms14			 	: 100;
+
+// UI
+
+$radius			: 5px;
+$border-width	: 1px;
+$border-style	: solid;
+$depth			: 0%; // Range: 0-100%
+$contrast		: 91%; // Range: 0-100%
+$shadow			: 21%; // Range: 0-100%
+$highlight		: 0%; // Range: 0-100%
+
+// Colors
+
+$bg:                #f9fdff;
+
+$alpha-text-color:  #404041;
+$beta-text-color:   $bg;
+
+$alpha-ui-color		: #0766b1; // Blue
+$beta-ui-color		: #6d6e71; // Dark grey
+$gamma-ui-color		: #bdbcbf; // Light grey
+$delta-ui-color		: #0099d1; // light grey
+$epsilon-ui-color	: #1e1e1e; // Dark dark grey
+
+$error-color 		: red;
+$success-color 		: green;
+$notice-color 		: yellow;
+
+$error-color 		: #d00c00;
+$success-color 		: #72aa2e;
+$notice-color 		: #ffe38a;
+
+
+// social media buttons
+
+$button-contents: #fff;
+$email: #0a88ff;
+$facebook: #306199;
+$linkedin: #007bb6;
+$twitter: #26c4f1;
+$googleplus: #e93f2e;
+$youtube: #df1c31;
+$pinterest: #b81621;
+$github: #444;
+$pocket: #ED4054;
+
+// pt. 2
+
+$rrssb-txt: #fff !default;
+$rrssb-email: #0a88ff !default;
+$rrssb-facebook: #306199 !default;
+$rrssb-tumblr: #32506d !default;
+$rrssb-linkedin: #007bb6 !default;
+$rrssb-twitter: #26c4f1 !default;
+$rrssb-googleplus: #e93f2e !default;
+$rrssb-reddit: #8bbbe3 !default;
+$rrssb-youtube: #df1c31 !default;
+$rrssb-pinterest: #b81621 !default;
+$rrssb-pocket: #ED4054 !default;
+$rrssb-github: #444 !default;
+$rrssb-instagram: #517fa4 !default;
+
+
+// Variable list for all social button colors to be iterated over.
+
+$social-list: (
+	rrssb-email				$rrssb-email,
+	rrssb-facebook			$rrssb-facebook,
+	rrssb-tumblr			$rrssb-tumblr,
+	rrssb-linkedin			$rrssb-linkedin,
+	rrssb-twitter			$rrssb-twitter,
+	rrssb-googleplus		$rrssb-googleplus,
+	rrssb-youtube			$rrssb-youtube,
+	rrssb-reddit			$rrssb-reddit,
+	rrssb-pinterest			$rrssb-pinterest,
+	rrssb-pocket			$rrssb-pocket,
+	rrssb-github			$rrssb-github,
+	rrssb-instagram 		$rrssb-instagram
+);
+
+
+
+// Links
+
+$alpha-link-color			: $alpha-ui-color;
+$alpha-link-colorhover		: darken($alpha-link-color, 10);
+$alpha-link-colorfocus		: darken($alpha-link-color, 10);
+$alpha-link-coloractive		: lighten($alpha-link-color, 10);
+$alpha-link-colorvisited	: darken($alpha-link-color, 5);

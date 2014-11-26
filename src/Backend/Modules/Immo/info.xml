@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>Immo</name>
+	<version>2.0.1</version>
+	<requirements>
+		<minimum_version>3.7.1</minimum_version>
+	</requirements>
+	<description>
+		<![CDATA[
+			The Immo module can display all kinds of immo (a portfolio) on your website.
+			Some features: related immo or clients, spotlight widget, attach images/files/videos.
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name><![CDATA[Bart De Clercq]]></name>
+			<url><![CDATA[http://www.lexxweb.be]]></url>
+		</author>
+		<author>
+			<name><![CDATA[Tim van Wolfswinkel]]></name>
+			<url><![CDATA[http://www.webleads.nl]]></url>
+		</author>
+		<author>
+			<name><![CDATA[Bart Lagerweij]]></name>
+			<url><![CDATA[http://www.webleads.nl]]></url>
+		</author>
+	</authors>
+	<events>
+		<event application="backend" name="after_add"><![CDATA[Triggered when an immo is added.]]></event>
+		<event application="backend" name="after_delete"><![CDATA[Triggered when an immo is deleted.]]></event>
+		<event application="backend" name="after_edit"><![CDATA[Triggered when an immo is edited.]]></event>
+		<event application="backend" name="after_add_category"><![CDATA[Triggered when a category is added.]]></event>
+		<event application="backend" name="after_delete_category"><![CDATA[Triggered when a category is deleted.]]></event>
+		<event application="backend" name="after_edit_category"><![CDATA[Triggered when a category is edited.]]></event>
+		<event application="backend" name="after_add_client"><![CDATA[Triggered when a client is added.]]></event>
+		<event application="backend" name="after_delete_client"><![CDATA[Triggered when a client is deleted.]]></event>
+		<event application="backend" name="after_edit_client"><![CDATA[Triggered when a client is edited.]]></event>
+		<event application="backend" name="after_add_image"><![CDATA[Triggered when an image is added.]]></event>
+		<event application="backend" name="after_delete_image"><![CDATA[Triggered when an image is deleted.]]></event>
+		<event application="backend" name="after_edit_image"><![CDATA[Triggered when an image is edited.]]></event>
+		<event application="backend" name="after_add_file"><![CDATA[Triggered when an image is added.]]></event>
+		<event application="backend" name="after_delete_file"><![CDATA[Triggered when an image is deleted.]]></event>
+		<event application="backend" name="after_edit_file"><![CDATA[Triggered when an image is edited.]]></event>
+		<event application="backend" name="after_add_video"><![CDATA[Triggered when an image is added.]]></event>
+		<event application="backend" name="after_delete_video"><![CDATA[Triggered when an image is deleted.]]></event>
+		<event application="backend" name="after_edit_video"><![CDATA[Triggered when an image is edited.]]></event>
+	</events>
+</module>

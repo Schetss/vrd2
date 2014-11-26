@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>contacts</name>
+	<version>1.1.0</version>
+	<requirements>
+		<minimum_version>3.5.0</minimum_version>
+	</requirements>
+	<description>
+		<![CDATA[
+			Show the world how customers feel about you or your product with the tesimonials module.
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name><![CDATA[Jan Moesen]]></name>
+			<url><![CDATA[http://jan.moesen.nu]]></url>
+		</author>
+		<author>
+			<name><![CDATA[Matthias Mullie]]></name>
+			<url><![CDATA[http://www.mullie.eu]]></url>
+		</author>
+	</authors>
+	<events>
+		<event application="backend" name="after_add"><![CDATA[Triggered when a contact is added.]]></event>
+		<event application="backend" name="after_delete"><![CDATA[Triggered when a contact is deleted.]]></event>
+		<event application="backend" name="after_edit"><![CDATA[Triggered when a contact is edited.]]></event>
+	</events>
+</module>

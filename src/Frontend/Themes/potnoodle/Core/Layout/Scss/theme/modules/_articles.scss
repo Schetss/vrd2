@@ -1,0 +1,312 @@
+//
+// main
+//
+
+
+.article-index {
+	margin-top: 1em;
+	@include mq($bp3) {
+		margin-top: 3em;
+	}
+}
+
+
+//
+// articles
+//
+
+.article {
+
+	padding-bottom: 3em;
+	margin-bottom: 4em;
+
+	@include mq($bp3) {
+		margin-bottom: 3em;
+	}
+
+	clear: both;
+	border-bottom: 1px solid $gamma-ui-color;
+
+
+	.left {
+		@include mq($bp3) {
+			width: 35%;
+			float: left;
+		}
+
+		.article-image {
+			height: 250px;
+			overflow: hidden;
+			@include mq($bp3) {
+				height: 200px;
+			}
+			@include mq($bp4) {
+				height: 250px;
+			}
+			
+		}
+
+
+		img {
+			//min-height: 250px;
+			width: 100%;
+			@include mq($bp3) {
+			//	min-height: 200px;
+				width: 100%;
+			}
+
+			@include mq($bp4) {
+			//	min-height: 250px;
+			}
+			
+		}
+
+	}
+
+	.right {
+
+		@include px-padding-lr(1,1);
+
+		@include mq($bp3) {
+			@include px-padding-lr(0,0);
+			width: 60%;
+			float: right;
+		}
+		
+		h2 {
+
+			margin-top: 0.5em; 
+
+			@include mq($bp3) {
+				margin-top: -0.3em;	
+			}
+
+			padding-top: 0;
+		
+			padding-bottom: 0;
+		}
+
+		p {
+			float: left;
+		}
+
+	}
+
+	.readmore {
+		padding-top: 0; 
+		float: left;
+	}
+
+}
+
+.date {
+		font-size: 0.9em;
+		color: $gamma-ui-color;
+		margin-top: -0.5em;
+	}
+
+.date-detail {
+		font-size: 0.9em;
+		color: $gamma-ui-color;
+}
+
+
+
+article:last-child {
+	border: 0;
+	padding-bottom: 0em;
+	margin-bottom: 0;
+}
+
+
+
+.mail-btn {
+	// margin-left: auto;
+	// margin-right: auto;
+	text-align: center;
+	margin-top: 1.5em;
+	width: 100%;
+	font-weight: $beta-font-weight;
+
+	a {
+		//background-color: lighten($alpha-ui-color,5);
+
+		background: -webkit-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+		background: -o-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+		background: -moz-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+		background: linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+		background: -ms-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+
+		border-radius: $radius;		
+		@include padding-tb(0.5,0.5);
+		@include px-padding-lr(2,2);
+		color: $beta-text-color;
+		width: 100%;
+		display: block;
+	}
+
+
+	a:hover, a:active {
+		background: -webkit-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+		background: -o-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+		background: -moz-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+		background: linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+		background: -ms-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+	}
+
+	a:active {
+		background: -webkit-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+		background: -o-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+		background: -moz-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+		background: linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+		background: -ms-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+	}
+
+	a:hover, a:active {
+		background-color: lighten($alpha-ui-color,3);
+		text-decoration: none;
+	}
+}
+
+
+
+
+//
+// news
+//
+
+.index-news {
+	margin-top: 2em;
+}
+
+.nieuws-meer {
+
+	margin-top: -1em;
+	margin-bottom: 1em;
+
+	text-align: center;
+
+	a, a:hover, a:active, a:visited {
+		text-decoration: none;
+		@include px-padding-lr(2,2);
+		background-color: lighten($alpha-ui-color,5);
+		color: $beta-text-color;
+		border-radius: $radius;
+		@include padding-tb(0.5,0.5);
+	}
+}
+
+
+//
+// Detail news
+//
+
+.content {
+	margin-top: 1em;
+
+	@include mq($bp3) {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	 p {
+	 	font-family: $beta-font-family;
+	 	font-size: 1.15em;
+	 	line-height: 2.1em;
+	 
+
+		 img {
+		 	@include margin-tb(0.5,0.5);
+		 	display: block;
+		 	width: 100%;
+		 	max-width: none;
+		 	// @include px-margin-lr(-1,-1);
+
+
+		 	@include mq($bp3) {
+		 		width: 70%;
+	 		 	@include margin-tb(1,1);
+		 		margin-left: auto;
+		 		margin-right: auto;	
+		 	}
+		 }
+	}
+
+	 footer {
+	 	border-top: 1px solid $gamma-ui-color;
+	 	border-bottom: 1px solid $gamma-ui-color;
+	 	margin-top: 2em;
+	 	@include padding-tb(1,1);
+	 	font-weight: bold;
+	 }
+}
+
+
+
+
+
+//
+// Jobs
+//
+
+.jobs {
+	.article {
+		margin-bottom: 2em;
+		padding-bottom: 6em;
+		position: relative;
+
+		@include mq($bp3) {
+			margin-bottom: 3em;
+			padding-bottom: 1em;
+		}
+
+		.left {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 2em;
+			width: 100%;
+			@include px-padding-lr(1,1);
+
+			@include mq($bp3) {
+				@include px-padding-lr(0,0);
+				position: relative;
+			//	margin: 0;
+				bottom: auto;
+				width: 35%;
+				.article-image {
+					
+					height: 0;
+					
+					@include mq($bp3) {
+						height: 200px;
+					}
+
+					@include mq($bp4) {
+						height: 250px;
+					}
+				}
+			}
+		}
+	}
+
+	.article:last-child {
+		margin-bottom: 0;
+	}
+
+	img {
+		display: none;
+
+		@include mq($bp3) {
+			display: block;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

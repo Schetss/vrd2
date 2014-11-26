@@ -1,0 +1,54 @@
+//
+// Layout
+//
+
+
+.extra-title {
+	@include px-padding-lr(1,1);
+
+	@include mq($bp3) {
+		@include px-padding-lr(0,0);
+	}
+}
+
+.contact-text {
+	width: 100%;
+	@include px-padding-lr(1,1);
+	
+	@include mq($bp3) {
+		width: 49%;
+		@include px-padding-lr(0,0);
+		margin-bottom: 1em;
+	}
+	
+	@include mq($bp3){
+		p a:nth-child(1), .tel {
+			pointer-events: none;
+			cursor: default;
+			color: $alpha-text-color;
+		}
+
+	}
+
+	float: left;
+
+
+	h2 {
+		padding-bottom: 0;
+		margin-bottom: 0.5em;
+		margin-top: 1em;
+		font-size: 1.2em;
+
+	}
+
+	p {
+		font-size: 1.2em;
+		line-height: 2.2em;
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+
+
+
+

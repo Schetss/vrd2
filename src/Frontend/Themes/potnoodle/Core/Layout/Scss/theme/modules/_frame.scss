@@ -1,0 +1,398 @@
+//
+// Frame
+//
+
+.holder {
+	background-color: $bg;
+	@include padding-tb(0,0);
+
+	@include mq($bp4) {
+		@include padding-tb(0,0);
+	}
+}
+
+//
+// Header
+//
+
+.header {
+	border-bottom: 3px solid $alpha-ui-color;
+
+	.inner-header {
+		border-bottom: 1px solid $beta-ui-color;
+
+		.inner-inner-header {
+			position: relative;
+
+			.slogan {
+				display: none;
+
+				@include mq($bp3) {
+					display: block;
+					position: absolute;
+					margin-left: 200px;
+					margin-top: 40px;
+				}
+			}
+
+		}
+	}
+
+
+}
+
+	.header .inner {
+		@extend %clearfix;
+		border-bottom: 1px solid lighten($alpha-text-color,60);
+	}
+
+.header-holder {
+	@include mq($bp3) {
+		@include padding-top(0);
+	}
+
+}
+
+	.header-holder .inner {
+		@include mq($bp3) {
+			@include padding-tb(1,0);
+		}
+
+		@include mq($bp4) {
+			@include padding-tb(2,0);
+		}
+	}
+
+.logo {
+	@include px-padding-lr(1,0);
+	width: 250px;
+	height: 66px;
+	float: left;
+	font-family: $alpha-font-family;
+	font-style: italic;
+	font-weight: $alpha-font-weight;
+	
+	@include mq($bp3) {
+		@include px-padding-lr(0,0);
+		width: 369px;
+		height: 98px;
+		float: left;
+		@include text-dimensions(14,1,0);
+	//	@include text-dimensions($alpha-font-size,1,1);
+
+	}
+}
+
+// 
+// Main header 
+//
+
+.main-header {
+	padding: 0;
+	margin-top: 0;
+	position: relative;
+
+	p {
+		padding: 0;
+	}
+
+	.main-title {
+		@include px-margin-lr(1,1);
+		position: absolute;
+		top: 0;
+		padding: 0;
+		margin-top: 1.4em;
+		font-size: 1.8em;
+
+		@include mq($bp2) {
+			font-size: 2em;
+			margin-top: 1.2em;
+		}
+
+		@include mq($bp3) {
+			@include px-margin-lr(0,0);
+			margin-top: 2.8em;
+			font-size: 3em;
+		}
+	}
+
+	.item-title {
+		position: absolute;
+		bottom: 0;
+		padding: 0;
+		margin-bottom: 0.7em;
+		font-size: 2.3em;
+
+		@include px-margin-lr(1,1);
+		@include mq($bp3) {
+			@include px-margin-lr(0,0);
+			margin-bottom: 1.2em;
+			font-size: 2.9em;
+		}
+
+	}
+
+}
+
+.main-header-image {
+	overflow: hidden;
+	height: 100px;
+
+	@include mq($bp3) {
+		height: 200px;
+	}
+
+	@include mq($bp4) {
+		height: 220px;
+	}
+
+	@include mq($bp5) {
+		height: 250px;
+	}
+
+	p img {
+		width: 150%;
+		@include mq($bp4){
+			width: 100%;		
+		}
+	}
+
+
+}
+
+.main-header-image2 {
+	overflow: hidden;
+	height: 200px;
+
+	@include mq($bp3) {
+		height: 250px;
+	}
+
+	@include mq($bp4) {
+		height: 300px;
+	}
+
+	@include mq($bp5) {
+		height: 350px;
+	}
+
+	img {
+		width: 150%;
+		@include mq($bp3) {
+			margin-top: -200px;
+			width: 100%;
+		}
+	}
+}
+
+#main-header-image3 {
+	overflow: hidden;
+	height: 200px;
+
+	@include mq($bp3) {
+		height: 250px;
+	}
+
+	@include mq($bp4) {
+		height: 300px;
+	}
+
+	@include mq($bp5) {
+		height: 350px;
+	}
+
+	img {
+		width: 150%;
+		@include mq($bp3) {		
+			width: 100%;
+		}
+	}
+}
+
+.image-overlay {
+	@include gradient-linear-transparant(5%,black);
+	width: 100%;
+	position: absolute;
+	top: 0;
+	height: 100px;
+
+	@include mq($bp3) {
+		height: 200px;
+	}
+
+	@include mq($bp4) {
+		height: 220px;
+	}
+
+	@include mq($bp5) {
+		height: 250px;
+	}
+
+
+
+}
+
+.image-overlay-detail {
+	@include gradient-linear-transparant(5%,black);
+	width: 100%;
+	position: absolute;
+	top: 0;
+	height: 200px;
+
+	@include mq($bp3) {
+		height: 250px;
+	}
+
+	@include mq($bp4) {
+		height: 300px;
+	}
+
+	@include mq($bp5) {
+		height: 350px;
+	}
+}
+
+.main-header-title {
+
+}
+
+//
+// bluebox
+//
+
+.bluebox, .bluebox2 {
+	background-color: $alpha-ui-color;
+	color: $beta-text-color;
+	@include px-padding-lr(1,1);
+	
+	@include mq($bp3) {
+		@include px-padding-lr(5,5);
+
+	}
+
+	p {
+		font-size: 1.04em;
+		line-height: 2.5em;
+	}
+
+	a, a:hover, a:active, a:visited {
+		padding: 0.2em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		background-color: $beta-text-color;
+		border-radius: $radius;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+
+	@include mq($bp3){
+		a:nth-child(2), a:hover:nth-child(2), a:active:nth-child(2), a:visited:nth-child(2) {
+			pointer-events: none;
+			cursor: default;
+			color: $alpha-text-color;
+			padding: 0em;
+			//padding-left: 0.5em;
+			//padding-right: 0.5em;
+			background-color: $alpha-ui-color;
+			color: $beta-text-color;
+			border-radius: none;
+			text-decoration: none;
+		}
+
+	}
+}
+
+.bluebox {
+	@include padding-tb (0.8,0.8);
+}
+
+.bluebox2 {
+	@include padding-tb (0,0);
+}
+
+//
+// Main 
+//
+
+#main {
+	padding-bottom: 2em;
+
+	.content {
+		@include px-padding-lr(1,1);
+
+		@include mq($bp3) {
+			@include px-padding-lr(5,5);
+		}
+	}
+
+
+	.text {
+		@include px-padding-lr(1,1);
+
+		@include mq($bp3) {
+			@include px-padding-lr(5,5);
+		}
+
+		p {
+			font-family: $beta-font-family;
+		 	font-size: 1.15em;
+		 	line-height: 2.1em;
+		}
+
+		.left {
+			width: 48%;
+			border-right: 1px solid $gamma-ui-color;
+			float: left;
+		}
+
+		.right {
+			width: 47%;
+			float: right;
+		}
+
+		h2 {
+			line-height: 2em;
+		}
+		ul {
+			font-family: $beta-font-family;
+		 	font-size: 1.15em;
+		 	line-height: 2.1em;
+		}
+	}
+}
+
+
+//
+// Doormat
+//
+
+.doormat-holder {
+	@include padding-bottom(1);
+
+	@include mq($bp4) {
+		@include padding-bottom(2);
+	}
+}
+
+	.doormat-col-4 {
+		@include box-(12,1,1);
+
+		@include mq($bp4) {
+			@include box-(4,1,1);
+		}
+	}
+
+//
+// Footer
+//
+
+.footer-holder {
+	line-height: 1.8em;
+	background-color: $alpha-ui-color;
+	color: lighten($alpha-text-color,70);
+	@include padding-tb(0.5,0.5);
+	font-size: 0.9em;
+	text-align: center;
+
+}
